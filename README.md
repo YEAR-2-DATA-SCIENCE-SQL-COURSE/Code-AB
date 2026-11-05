@@ -1,7 +1,11 @@
 # Code-AB
+
+## Project Title
 Kigali Hospital Patients Records 
 
 ## Group Members
+| Member Name | Role |
+| :-- | :-- | 
 | Mussab Altoom | Leader |
 | Muhammed Abdalkareem | Member |
 
