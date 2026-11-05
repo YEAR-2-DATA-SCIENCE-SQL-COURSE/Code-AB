@@ -23,7 +23,7 @@ The purpose for creating A Database is solve some problems in storing data manua
 
 ## Objectives 
 * Design an organized Database.
-* Enable easily to share the data multi hospitals.
+* Enable easily to share the data across multi hospitals.
 * It is very easy to make analysis in the data.
 * Manipulate in the data very easy delete, update just through queries.
 
