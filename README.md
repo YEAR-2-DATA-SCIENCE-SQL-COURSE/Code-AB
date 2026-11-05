@@ -1,6 +1,10 @@
 # Code-AB
 Kigali Hospital Patients Records 
 
+## Group Members
+| Mussab Altoom | Leader |
+| Muhammed Abdalkareem | Member |
+
 ## Introduction 
 This is A Relational Database Management System for managing Patients Records, Dates and Departments in Kigali Hospital. 
 
