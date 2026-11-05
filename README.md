@@ -8,6 +8,12 @@ Kigali Hospital Patients Records
 | :-- | :-- | 
 | Mussab Altoom | Leader |
 | Muhammed Abdalkareem | Member |
+| Adel Salah | Member | 
+| Ahmed Elmotez | Member |
+| Muhammed Ahmed | Member |
+| Ahmed Ibrahim | Member |
+| Abdalla Abulgasim | Member |
+| Hassan | Member |
 
 ## Introduction 
 This is A Relational Database Management System for managing Patients Records, Dates and Departments in Kigali Hospital. 
