@@ -1,0 +1,55 @@
+-- start with creating tables
+CREATE TABLE departments (
+    department_id SERIAL PRIMARY KEY,
+    department_name VARCHAR(100) NOT NULL,
+    location VARCHAR(100)
+);
+
+CREATE TABLE doctors (
+    doctor_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    specialization VARCHAR(100),
+    phone VARCHAR(20),
+    department_id INT,
+    manager_id INT,
+    foreign key (department_id) references departments(department_id),
+    foreign key (manager_id) references doctors(doctor_id)
+);
+
+CREATE TABLE patients (
+    patient_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    date_of_birth DATE,
+    gender VARCHAR(10),
+    phone VARCHAR(20),
+    address TEXT
+);
+
+CREATE TABLE appointments (
+    appointment_id SERIAL PRIMARY KEY,
+    patient_id INT NOT NULL,
+    doctor_id INT NOT NULL,
+    appointment_date TIMESTAMP NOT NULL,
+    status VARCHAR(50) DEFAULT 'Scheduled',
+    foreign key (patient_id) references patients(patient_id),
+    foreign key (doctor_id) references doctors(doctor_id)
+);
+
+CREATE TABLE prescriptions (
+    prescription_id SERIAL PRIMARY KEY,
+    appointment_id INT NOT NULL,
+    medication_name VARCHAR(150) NOT NULL,
+    dosage VARCHAR(100),
+    instructions TEXT,
+    search_vector TSVECTOR,
+    foreign key (appointment_id) references appointments(appointment_id)
+);
+-- this for indexing fast reserarches 
+CREATE INDEX prescriptions_search_idx ON prescriptions USING GIN (search_vector);
+
+
+
+
+
