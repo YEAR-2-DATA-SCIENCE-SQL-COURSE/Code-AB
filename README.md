@@ -70,3 +70,9 @@ This system can be used in Kigali hospitals for :
 
 
 ## Future Improvements
+** implement an online patient portal where patients can view their medical records, appointment, and prescriptions.
+add an appointment booking and scheduling system to reduce waiting times.
+** integrate the system with laboratory and pharmacy departments for seamless sharing of test results and prescriptions. 
+** enable SMS or email reminders for appointments and medication schedules. 
+** enhance security by adding two-factor authentication and stronger data encryption.
+** develop a mobile application for doctors, nurses, and patients to access records conveniently.
