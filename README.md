@@ -42,8 +42,8 @@ The purpose for creating A Database is solve some problems in storing data manua
   ## Database Design and Diagrams 
 
 * ​Departments and Doctors Structure: The diagram shows how the departments table connects to the doctors table, while allowing doctors to manage other doctors using a manager ID field.  
-.. Appointments as a Link: The appointments table acts as a bridge connecting patients and doctors together to organize visits and track their statuses.  
-.. Prescriptions and Fast Search: It shows how appointments lead to prescriptions, which include a special search vector and GIN index for fast text searches.
+** Appointments as a Link: The appointments table acts as a bridge connecting patients and doctors together to organize visits and track their statuses.  
+** Prescriptions and Fast Search: It shows how appointments lead to prescriptions, which include a special search vector and GIN index for fast text searches.
 
 <img width="1216" height="822" alt="WhatsApp Image 2026-11-07 at 4 56 26 PM" src="https://github.com/user-attachments/assets/aa042d56-763a-470b-acab-a0447947fe53" />
 
