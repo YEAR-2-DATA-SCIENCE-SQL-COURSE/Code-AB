@@ -49,7 +49,24 @@ The purpose for creating A Database is solve some problems in storing data manua
 
 
 
+## Real World Applications
+This system can be used in Kigali hospitals for :
+* **Patient Registration:** Fast intake at reception to avoid long lines.
+* **Medical Records:** Safe and quick access to patient medical history.
+* **Appointments:** Easy scheduling for doctors, rooms, and clinic visits.
+* **Hospital Reports:** Clear data to help management track visits and resources.
 
+  ## Challenges and Recommendations
+
+  ## Challenges
+  * **Data Safety:** Protecting sensitive patient records from Unauthorized access.
+  * **Staff Adaptation:** Helping hospital staff move smoothly from paper to a digital system.
+  * **performance:** Keeping the system fast as patient data grow.
+ 
+    ## Recommendations
+    * **Role Access :** Give each staff member access only to the data they need.
+    * **Staff Training:** Provide clear training to make the transition easy for doctor and nurses.
+    * **System Maintenance :** Run regular backups and optimize the database for for high speed.
 
 
 ## Future Improvements
