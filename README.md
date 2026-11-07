@@ -35,6 +35,8 @@ The purpose for creating A Database is solve some problems in storing data manua
 * Execute queries for fast and easy access data retrieval.
 * Apply join to show the relation between the tables e.g one_to_one.
 
-  ## Technical Approach
+  ## Technical Approach 
   
-  
+
+
+  ## Database and Diagrams 
