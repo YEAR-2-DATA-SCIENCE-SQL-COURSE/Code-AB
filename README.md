@@ -109,3 +109,10 @@ add an appointment booking and scheduling system to reduce waiting times.
 * develop a mobile application for doctors, nurses, and patients to access records conveniently.
 
 ## References 
+
+## 14. References
+
+1. **PostgreSQL Global Development Group.** (2026). *PostgreSQL Documentation: Full Text Search*. Retrieved from https://www.postgresql.org/docs/textsearch.html
+2. **Elmasri, R., & Navathe, S. B.** (2015). *Fundamentals of Database Systems* (7th ed.). Pearson.
+3. **W3Schools.** (2026). *SQL Introduction and Constraints*. Retrieved from https://www.w3schools.com/sql/
+4. **GitHub Documentation.** (2026). *Basic writing and formatting syntax*. Retrieved from https://docs.github.com/en/get-started/writing-on-github
