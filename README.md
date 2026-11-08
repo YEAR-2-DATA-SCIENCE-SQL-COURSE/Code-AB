@@ -35,7 +35,38 @@ The purpose for creating A Database is solve some problems in storing data manua
 * Execute queries for fast and easy access data retrieval.
 * Apply join to show the relation between the tables e.g one_to_one.
 
-  ## Technical Approach 
+## 7. Technical Approach
+
+This section detail the technical design, architectural patterns, software tools, and engineering methodologies employed to design, normalize, and deploy the relational database system.
+
+### 7.1 Architectural Overview & System Patterns
+The system is built upon a **Layered Client-Server Relational Architecture**, emphasizing modular design, scalability, and robust data consistency:
+* **Relational Database Tier:** Utilizes an RDBMS engine (MySQL / PostgreSQL) to enforce structural schema constraints, ensure strict ACID compliance, and manage indexed relational mappings[span_0](start_span)[span_0](end_span).
+* **Data Processing & Automation Tier:** Implements modular SQL scripts for Data Definition (DDL), Data Manipulation (DML), and advanced programmatic structures including Database Views, Triggers, and Stored Procedures.
+* **Structured Repository Organization:** Maintains a strict separation of concerns across dedicated project directories[span_1](start_span)[span_1](end_span):
+  * `sql/`: Contains fully documented, modular DDL and DML execution scripts[span_2](start_span)[span_2](end_span).
+  * `diagrams/`: Houses visual modeling artifacts, including conceptual and logical Entity-Relationship Diagrams (ERDs)[span_3](start_span)[span_3](end_span).
+  * `sample-data/`: Stores curated datasets used for query execution, validation, and benchmarking[span_4](start_span)[span_4](end_span).
+
+### 7.2 Technology Stack
+* **Database Management System (DBMS):** MySQL / PostgreSQL managed via phpMyAdmin, pgAdmin, or Visual Studio Code integrated tooling.
+* **Version Control & Collaboration:** Git & GitHub for granular history tracking and collaborative repository management.
+* **Data Modeling & Specification:** Markdown for documentation; industry-standard visual tools (MySQL Workbench / draw.io) for schema modeling.
+
+### 7.3 Core Engineering Methodologies
+1. **Requirements Elicitation & Conceptual Schema Design:**
+   - Identified domain-specific business entities, core attributes, and system-wide operation rules.
+   - Formulated conceptual ER diagrams establishing explicit entity relationships, participation constraints, and cardinalities (1:1, 1:N, M:N)[span_5](start_span)[span_5](end_span).
+2. **Logical Schema Transformation & Relational Normalization:**
+   - Mapped conceptual entities directly into logical tables with defined Primary Keys (PK) and Foreign Keys (FK).
+   - Applied **Third Normal Form (3NF) Normalization** guidelines to systematically eliminate data redundancy and prevent operational anomalies (Insertion, Update, and Deletion).
+3. **Physical Implementation & Declarative Scripting:**
+   - Authored DDL scripts incorporating strict data type definitions, `NOT NULL` constraints, `UNIQUE` indexes, and referential integrity cascades (`ON DELETE`, `ON UPDATE`).
+   - Populated the schema via DML scripts and constructed relational queries involving complex multi-table `JOIN` operations, aggregate functions, and grouped metrics.
+4. **Validation, Integrity Verification & Performance Testing:**
+   - Conducted rigorous edge-case testing to ensure foreign key integrity and constraint enforcement under non-standard inputs.
+   - Verified that query execution outputs directly fulfill the domain objectives outlined in the project scope.
+  
   
 
 
