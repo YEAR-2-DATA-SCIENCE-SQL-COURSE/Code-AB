@@ -76,3 +76,5 @@ add an appointment booking and scheduling system to reduce waiting times.
 * enable SMS or email reminders for appointments and medication schedules. 
 * enhance security by adding two-factor authentication and stronger data encryption.
 * develop a mobile application for doctors, nurses, and patients to access records conveniently.
+
+## References 
