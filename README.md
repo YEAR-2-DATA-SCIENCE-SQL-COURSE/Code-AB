@@ -47,7 +47,7 @@ The system is built upon a **Layered Client-Server Relational Architecture**, em
   * `sql/`: Contains fully documented, modular DDL and DML execution scripts[span_2](start_span)[span_2](end_span).
   * `diagrams/`: Houses visual modeling artifacts, including conceptual and logical Entity-Relationship Diagrams (ERDs)[span_3](start_span)[span_3](end_span).
   * `sample-data/`: Stores curated datasets used for query execution, validation, and benchmarking[span_4](start_span)[span_4](end_span).
-jh
+
 ### 7.2 Technology Stack
 * **Database Management System (DBMS):** MySQL / PostgreSQL managed via phpMyAdmin, pgAdmin, or Visual Studio Code integrated tooling.
 * **Version Control & Collaboration:** Git & GitHub for granular history tracking and collaborative repository management.
